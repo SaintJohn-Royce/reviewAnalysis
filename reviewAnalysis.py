@@ -29,9 +29,14 @@ with open('reviews.txt', 'r') as file:
 
 		if 'good' in line:
 
+			# a much easier syntax for this is 
+			# dataGood = [line for line in file if 'good' in line]
+
 			dataGood.append(line)
 
 			lineGood = lineGood + 1
+
+
 
 avgNum = totalNumber / len(data)
 
